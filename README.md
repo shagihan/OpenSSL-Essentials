@@ -17,7 +17,7 @@ OpenSSL Essentials commands for linux
 
     openssl x509 -in domain.crt -signkey domain.key -x509toreq -out domain.csr
 
-**Generate a Self-Signed Certificate**
+**Generate a Self-Signed Certificate (With private key in one command)**
 
     openssl req -newkey rsa:2048 -nodes -keyout domain.key -x509 -days 365 -out domain.crt
 
