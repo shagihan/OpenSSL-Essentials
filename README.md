@@ -49,6 +49,11 @@ OpenSSL Essentials commands for linux
 
     openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt
 
+
+**Convert a pfx to java keystore **
+
+    keytool -importkeystore -srckeystore mykeystore.p12 -destkeystore clientcert.jks -srcstoretype pkcs12 -deststoretype JKS
+
 **Convert PEM to CRT (.CRT file)**
 
     openssl x509 -outform der -in certificate.pem -out certificate.crt  
