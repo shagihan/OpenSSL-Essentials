@@ -1,6 +1,10 @@
 # OpenSSL-Essentials
 OpenSSL Essentials commands for linux
 
+**OPEN SSL Show Certificate**
+
+    openssl s_client -showcerts -connect www.example.com:443
+
 **Generate a Private Key**
 
     openssl genrsa -out <private_key_name> <key_length>
